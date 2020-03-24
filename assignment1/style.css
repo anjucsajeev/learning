@@ -13,8 +13,9 @@ div{
 h1{
   background-color: #70ada7;
   font-size: 36pt;
-  border: 1px dotted;
+  border: 2px dotted;
   padding: 5px;
+  border-radius: 10px;
 }
 .heading{
   font-family: sans-serif;
@@ -24,4 +25,13 @@ h1{
 .para{
   font-family: sans-serif;
   font-size: 12pt;
+}
+a:link, a:visited {
+  color: #015d67;
+  text-decoration: none;
+  list-style-type: none;
+
+}
+h4{
+  font-size: 14pt;
 }
