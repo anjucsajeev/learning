@@ -1,15 +1,18 @@
 body{
   font-family: sans-serif;
+
 }
 #mainheading{
   background-color: #c0c0c0 ;
   padding: 10px;
+
 }
 
 .header {
 font-weight: bold;
 font-style: normal;
 font-size: 30pt;
+  margin-left: 20%;
 }
 #food {
   font-size: 50pt;
@@ -26,12 +29,14 @@ font-size: 30pt;
   font-weight: bold;
   font-size: 12pt;
   text-align: center;
+    margin-left: 18%;
 }
 .line {
   display: inline-flex;
   padding-right: 10px;
   border-right: 2px solid white;
   margin-left: 3px;
+
 }
 .line > a.visited , .line > a  {
   text-decoration: none;
@@ -43,18 +48,20 @@ font-size: 30pt;
   padding: 3px;
   margin-top: 25px;
   width:77%;
+  margin-left: 21%;
 }
 #search{
   width: 98%;
 margin: 5px;
 outline-style: none;
-  font-size: 20pt;
+  font-size: 14pt;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 .content{
-  width: 65%;
+  width: 77%;
     margin-right: 25%;
+      margin-left: 22%;
 }
 #h2{
   font-size: 30pt;
@@ -75,11 +82,12 @@ font-size: 12pt;
 .pp{
   display: inline-block;
   font-size: 14pt;
-  margin-left: 100px;
+  margin-left: 20px;
 }
-.imglogos{
-  width:40px;
-  height: 40px;
+
+.footercontent{
+
+margin-left: 20%;
 }
 #FAQ{
   font-weight: bold;
