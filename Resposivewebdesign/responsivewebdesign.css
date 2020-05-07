@@ -1,0 +1,45 @@
+body{
+background-color: #C70039;
+font-family: sans-serif;
+display: flex;
+display: flex;
+justify-content: space-between;
+}
+
+html{
+box-sizing: border-box;
+
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.header{
+}
+
+.content{
+display: flex;
+justify-content: space-between;
+width: 90%;
+
+}
+img{
+  width: 100%;
+}
+
+.content1{
+  width: 60%;
+  margin: 0 ;
+  padding:30px;
+  background-color: #FF5733;
+
+}
+
+.content2{
+  width: 30%;
+  margin: 0 ;
+  padding: 30px;
+  background-color: #FFC30F;
+
+
+}
