@@ -2,9 +2,109 @@ body {
 	font-family: sans-serif;
 	background: #FFFFFF;
 	color: #363636;
-	padding: 0px 40px;
+}
+
+.main {
+padding: 0px 10%;
+}
+
+
+/* CSS Header copied*/
+#mainheading{
+  padding: 10px;
+  background-image: url(foodimage/berries.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  background-color: #ededed;
+}
+
+.header {
+font-weight: bold;
+font-style: normal;
+font-size: 30pt;
+margin-left: 3%;
+padding-right: 3%;
+}
+
+#h2 {
+  margin-left: 5%;
+}
+
+#food {
+  font-size: 50pt;
+}
+
+#chefs {
+  margin-left: 1%;
+}
+.menudiv {
+  background-color: #3b4047;
+  opacity: 0.6;
+  color: white;
+  padding: 5px 0px 5px 5px;
 
 }
+.menu {
+  display: inline;
+  font-weight: bold;
+  font-size: 12pt;
+  text-align: left;
+  margin-left: 0%;
+}
+
+.line {
+  display: inline-flex;
+  padding-right: 10px;
+  border-right: 2px solid white;
+  margin-left: 3px;
+  background-color: #3b4047;
+}
+
+.line > a.visited , .line > a  {
+  text-decoration: none;
+  color: white;
+}
+
+.searchbox{
+  background-color: #dfe1e6;
+  padding: 10px;
+  margin-top: 25px;
+  width:60%;
+  margin-left: 4%;
+}
+#search{
+  width: 98%;
+margin: 5px;
+outline-style: none;
+  font-size: 20pt;
+  font-color: #dfe1e6;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.menu {
+background-color: #97999c;
+display: inline;
+}
+
+.footer{
+  padding-top: 15px;
+  background-color: #dfe1e6;
+  width: 100%;
+  height: 200px;
+}
+.pp{
+  display: inline-block;
+  font-size: 14pt;
+  margin-left: 20px;
+}
+
+/* end css header*/
+
+
+
 
 p, h2, h3 {
 	margin-left: 15px;
@@ -16,25 +116,46 @@ a {
 }
 
 a:hover {
-	color: #52CDCD;
+	color: #3CB0E1;
 }
 
+
+/* nav videos*/
+
+.nav-videos {
+	margin: 10px 0px;
+	font-size: 12px;
+}
+
+ul {
+	padding: 5px 0 0 0;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+	padding-right: 30px;
+}
+
+.selected {
+	font-weight: 700;
+	text-decoration: underline 2px turquoise;
+}
 
 /* DIVs */
 
 .episode {
-	display: block; 
-	position: absolute;
-	margin: 10px 0;
+	margin: 30px 0;
 
 }
 
 .video-card {
 	position: relative;
 	display: inline-block;
+	vertical-align: top;
 	background: #EEEEEE;
-	margin: 0 10px 10px 0;
-	width: 410px;
+	margin: 5px 10px 10px 0;
+	width: 415px;
 	height: 300px;
 }
 
@@ -49,8 +170,8 @@ a:hover {
 	width: 90px;
 	height: 30px;
 	position: absolute;
-	 left: 15px;
-	 bottom: 15px;
+	 left: 10px;
+	 bottom: 10px;
 	text-transform: uppercase;
 	font-size: 10px;
 }
@@ -59,9 +180,10 @@ a:hover {
 .recipe-card {
 	position: relative;
 	display: inline-block;
+	vertical-align: top;
 	background: #EEEEEE;
 	width: 200px;
-	margin: 0px 10px 10px 0px;
+	margin: 5px 10px 10px 0;
 }
 
 .tall {
@@ -80,6 +202,7 @@ a:hover {
 .section-title {
 	font-weight: normal;
 	font-size: 22px;
+	margin-top: 10px;
 }
 
 .episode-title {
@@ -91,15 +214,22 @@ a:hover {
 
 .video-title {
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 10px;
 
 }
 
 .recipe-title {
 	font-weight: bold;
-	font-size: 12px;
+	font-size: 11px;
 
+	line-height: 15px;
+	width: 85%;
+}
+
+.no-image {
+	font-size: 14px;
+	margin-top: 20px;
 }
 
 
@@ -110,10 +240,12 @@ a:hover {
 	text-transform: capitalize;
 	font-size: 11px;
 	margin-left: 0px;
+	margin-top: 0px;
 }
 
 .author-or-subtitle {
-	font-size: 11px;
+	font-size: 10px;
+	line-height: 6px;
 
 }
 
@@ -123,15 +255,13 @@ a:hover {
 
 .type-of-meal {
 	text-transform: uppercase;
-	font-size: 10px;
+	font-size: 9px;
 	position: absolute;
-	bottom: 10px;
+	bottom: 5px;
+	color: #6D6D6D;
 
 }
 
-.recent-all {
-	color: #000000;
-}
 
 
 /* other elements */
@@ -142,8 +272,9 @@ hr.light {
 
 }
 
-hr.darker {
-	color: #9c9c9c; /* same color of header search text */
+hr.thick {
+	border: 1px solid #f1f1f1; /* same color of header search text */
+	margin: 0 0 20px 0;
 
 }
 
@@ -151,6 +282,11 @@ hr.darker {
 	width: 200px;
 	display: block;
 	position: relative;
+	margin-bottom: 15px;
+}
+
+.small img {
+	height: 50%;
 }
 
 
