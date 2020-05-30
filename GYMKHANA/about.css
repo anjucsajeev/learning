@@ -1,0 +1,182 @@
+
+html{
+  font-size: 16px;
+
+}
+*{
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  font-family: serif;
+}
+
+h1 {
+  font-family:sans-serif;
+  font-style: oblique;
+  font-weight:bold;
+  font-size: 16pt;
+}
+
+a{
+  text-decoration: none;
+  color: #000000
+}
+
+a:visited{
+  color: black:
+}
+
+.header{
+  display: grid;
+  grid-auto-flow: column;
+  height: 6rem;
+  align-items: baseline;
+  padding: 2rem 3rem 0 2rem;
+  background-color:;
+
+}
+
+.logo{
+  display: grid;
+justify-content: flex-start;
+width: 45%;
+}
+
+nav{
+  display: grid;
+  justify-content: flex-end;
+/*align-self: baseline flex-end;*/
+  grid-auto-flow: column;
+  grid-gap: 3rem;
+  font-size:12pt;
+  background-color:;
+  width: 100%;
+}
+
+ul{
+  display: block;
+}
+
+img{
+width: 100%;
+}
+
+.potraitphoto{
+  display: grid;
+  grid-template-columns: 30rem 30rem 30rem   ;
+  grid-template-rows:  30rem 20rem;
+  grid-gap:1.25rem;
+}
+
+.content1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main{
+  width: 45%;
+  background-color: black;
+
+}
+
+.aside{
+  width: 50%;
+  padding: 10rem 0 0 2rem;
+  font-size: 10pt;
+  line-height:
+  display: flex;
+  background-color: ;
+
+}
+.span1{
+  font-size: 45pt;
+  font-weight: bold;
+  font-family: sans-serif;
+
+}
+
+.para{
+line-height: 1.3rem;
+font-weight: bold;
+font-size: 12pt;
+}
+
+.button{
+  background-color: #ffbf00;
+  width:10rem;
+  border: 0;
+  box-shadow: none;
+  border-radius: .18rem;
+  height: 2rem;
+  font-weight: bold;
+  margin-top:3rem;
+  color: white;
+}
+
+.footer{
+  display: grid;
+  justify-content: center;
+  background-color: ;
+  margin-bottom: 4rem;
+
+}
+
+.footerimg{
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.footerlink{
+  display: grid;
+  justify-content: flex-end;
+  align-content:center;
+  grid-auto-flow: column;
+  grid-gap: 5rem;
+  font-size:12pt;
+}
+@media screen and (max-width:1100px){
+  .header,
+  .container,/* how to resize grid ?*/
+  .footer{
+    width:90%;
+    }
+  }
+
+
+  @media screen and (max-width:800px){
+    .main,
+    .aside{
+    width: 100%;
+    }
+
+    .content{
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .header,
+    .footer{
+    display: flex;
+    flex-direction:column;
+    margin: 2rem;
+    }
+
+  }
+
+
+  @media screen and (max-width:600px){
+    nav{
+  grid-gap: .5rem;
+  margin-bottom: .5rem;
+  }
+
+.footerlink{
+  grid-gap: .5rem;
+  justify-content: center;
+  }
+
+
+  }
