@@ -19,12 +19,22 @@
   text-align: center;
   grid-gap: 30px;
   padding: 20px;
+  background-color:;
   }
 
-.cardimg img {
+/*.cardimg {
   width: 270px;
   height: 300px;
+}*/
 
+.cardimg img{
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+.cardimg img:hover{
+  width: 98%;
+  height: 192px;
 }
 
 .card{
@@ -33,6 +43,9 @@
   border-radius: 5px;
   box-shadow: 5px 3px 3px black;
   opacity: 93%;
+  width: 300px;
+  height: 500px;
+
 
 }
 
@@ -42,13 +55,24 @@
 }
 
 .icons button {
-  font-size: 11pt;
+  font-size:12pt;
   font-family: monospace;
   padding: 10px;
-  background-color: #06283B;
-  color: white;
+  background-color: ;
+  color: #172c61;
+  font-weight: bold;
   border-style: none;
   margin-right: 20px;
+  border: 2px solid #06283B;
+  cursor: pointer;
+}
+
+.icons :hover{
+  background-color: #06283B;
+  color: white;
+}
+button:hover{
+  color: white;
 }
 
 .icons a{
@@ -59,7 +83,38 @@ text-decoration: none;
 }
 
 @media screen and (max-width:800px){
-  #flo
-  {
-    flex-direction: column;
+
+#floater{
+  display: grid;
+  grid-template-columns: 45% 45%;
+
+  background-color:;
+  width: 100%;
   }
+
+  .card{
+  display: block;
+  margin-top: 10px;
+  margin: 0 auto;
+  background-color: ;
+  max-width: 400px;
+  }
+
+
+}
+
+
+  @media screen and (max-width:600px){
+
+#floater {
+display: block;
+width: 100%;
+}
+.card{
+margin: 0 auto;
+background-color: ;
+max-width: 400px;
+margin-bottom: 25px;
+}
+
+}
